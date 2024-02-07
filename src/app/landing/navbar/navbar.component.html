@@ -1,0 +1,239 @@
+@if(menuLateralVisible){
+<div [@deslizarseIzq] class="h-full w-full absolute z-30">
+  <nav class="w-[150px] h-lvh fixed right-0 z-50 bg-[#2bb37f]">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="24"
+      viewBox="0 -960 960 960"
+      width="24"
+      class="fill-slate-700 float-right m-2"
+      (click)="toggleMenuLateral()"
+    >
+      <path
+        d="m336-280 144-144 144 144 56-56-144-144 144-144-56-56-144 144-144-144-56 56 144 144-144 144 56 56ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+      />
+    </svg>
+    <ul
+      class="flex flex-col items-center justify-center gap-y-5 flex-wrap w-full mr-10 py-10"
+    >
+      <li class="cursor-pointer">
+        <a
+          href="#"
+          class="text-gray-600 hover:text-gray-800 font-semibold transition-all ease-in-out duration-200"
+          >Inicio</a
+        >
+      </li>
+      <li class="cursor-pointer">
+        <a
+          href="#"
+          class="text-gray-600 hover:text-gray-800 font-semibold transition-all ease-in-out duration-200"
+          >Talleres</a
+        >
+      </li>
+      <li class="cursor-pointer">
+        <a
+          href="#"
+          class="text-gray-600 hover:text-gray-800 font-semibold transition-all ease-in-out duration-200"
+          >Usuarios</a
+        >
+      </li>
+      <li class="cursor-pointer">
+        <a
+          href="#"
+          class="text-gray-600 hover:text-gray-800 font-semibold transition-all ease-in-out duration-200"
+          >Mapa</a
+        >
+      </li>
+      <li class="cursor-pointer">
+        <a
+          href="#"
+          class="text-gray-600 hover:text-gray-800 font-semibold transition-all ease-in-out duration-200 whitespace-nowrap"
+          >Llave en mano</a
+        >
+      </li>
+      <li class="cursor-pointer">
+        <a
+          href="#"
+          class="text-gray-600 hover:text-gray-800 font-semibold transition-all ease-in-out duration-200"
+          >Información</a
+        >
+      </li>
+      <li class="cursor-pointer">
+        <a
+          href="#"
+          class="text-gray-600 hover:text-gray-800 font-semibold transition-all ease-in-out duration-200"
+          >Equipamiento</a
+        >
+      </li>
+      <li class="cursor-pointer">
+        <a
+          href="#"
+          class="text-gray-600 hover:text-gray-800 font-semibold transition-all ease-in-out duration-200"
+          >Contacto</a
+        >
+      </li>
+    </ul>
+  </nav>
+  <div class="h-[100vh] w-[100vw]" (click)="toggleMenuLateral()"></div>
+</div>
+}
+<div
+  class="h-20 fixed top-0 w-[100vw] bg-[#2bb37f] px-[16px] py-[8px] shadow-md drop-shadow-md flex flex-row items-center select-none"
+>
+  <img class="w-[240px] flex-shrink-0" src="assets/img/txtVtaller.png" alt="" />
+  <nav class="flex flex-row w-full items-center">
+    <div class="hidden xl:flex flex-row w-full items-center">
+      <ul
+        class="flex flex-row items-center justify-center gap-x-10 flex-wrap w-full mr-10"
+      >
+        <li class="cursor-pointer">
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-800 font-semibold transition-all ease-in-out duration-200"
+            >Inicio</a
+          >
+        </li>
+        <li class="cursor-pointer">
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-800 font-semibold transition-all ease-in-out duration-200"
+            >Talleres</a
+          >
+        </li>
+        <li class="cursor-pointer">
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-800 font-semibold transition-all ease-in-out duration-200"
+            >Usuarios</a
+          >
+        </li>
+        <li class="cursor-pointer">
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-800 font-semibold transition-all ease-in-out duration-200"
+            >Mapa</a
+          >
+        </li>
+        <li class="cursor-pointer">
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-800 font-semibold transition-all ease-in-out duration-200 whitespace-nowrap"
+            >Llave en mano</a
+          >
+        </li>
+        <li class="cursor-pointer">
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-800 font-semibold transition-all ease-in-out duration-200"
+            >Información</a
+          >
+        </li>
+        <li class="cursor-pointer">
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-800 font-semibold transition-all ease-in-out duration-200"
+            >Equipamiento</a
+          >
+        </li>
+        <li class="cursor-pointer">
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-800 font-semibold transition-all ease-in-out duration-200"
+            >Contacto</a
+          >
+        </li>
+      </ul>
+      <svg
+        class="w-[60px] cursor-pointer"
+        version="1.0"
+        xmlns="http://www.w3.org/2000/svg"
+        width="64pt"
+        height="64pt"
+        viewBox="0 0 512.000000 512.000000"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <g
+          class="fill-white hover:fill-[#ee245d] transition-colors ease-in-out duration-200"
+          transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+          stroke="none"
+        >
+          <path
+            d="M2400 5113 c-347 -34 -570 -87 -837 -199 -1079 -452 -1716 -1604
+        -1527 -2764 154 -946 828 -1730 1740 -2023 427 -138 900 -159 1344 -61 644
+        142 1230 553 1592 1114 366 568 490 1273 342 1940 -226 1015 -1055 1797 -2084
+        1964 -188 30 -432 43 -570 29z m535 -332 c889 -157 1591 -807 1809 -1676 52
+        -205 60 -283 60 -545 0 -262 -9 -343 -60 -545 -77 -308 -236 -627 -436 -873
+        -205 -253 -458 -453 -763 -602 -221 -109 -405 -168 -646 -207 -148 -24 -544
+        -24 -684 0 -698 122 -1267 515 -1610 1111 -434 757 -387 1712 120 2421 373
+        522 939 855 1585 934 131 17 489 6 625 -18z"
+          />
+          <path
+            d="M1785 4355 c-5 -2 -35 -6 -66 -10 l-56 -6 -6 -87 c-6 -102 -21 -142
+        -51 -142 -28 0 -90 34 -144 77 l-42 34 -29 -20 c-15 -11 -54 -48 -85 -81 l-56
+        -61 43 -57 c49 -63 77 -113 77 -136 0 -24 -35 -37 -132 -47 -51 -5 -93 -11
+        -96 -13 -10 -11 -22 -88 -22 -152 l0 -72 36 -7 c66 -12 161 -45 174 -60 19
+        -23 2 -54 -71 -126 l-69 -68 49 -73 c79 -118 76 -117 165 -73 42 21 92 38 112
+        39 35 1 38 -1 45 -35 5 -20 5 -65 1 -100 l-7 -64 -107 -5 c-95 -4 -110 -8
+        -130 -28 l-23 -23 -9 -586 c-8 -526 -7 -589 7 -619 20 -41 66 -66 114 -62 l36
+        3 89 245 c85 234 101 270 113 258 8 -8 -242 -709 -264 -738 -20 -28 -61 -46
+        -83 -37 -11 4 -55 204 -159 726 l-144 721 -162 0 c-107 0 -163 -4 -163 -10 0
+        -17 380 -1763 386 -1772 3 -4 76 -8 164 -8 130 0 169 4 224 20 73 23 141 70
+        169 117 10 18 87 244 172 503 84 260 156 474 159 478 26 25 9 -43 -62 -255
+        -45 -136 -81 -248 -79 -249 1 -1 176 -4 388 -8 l386 -7 138 420 139 421 200 2
+        200 3 32 104 c18 58 35 115 39 128 l5 23 -738 0 -738 0 -27 -102 c-15 -57 -30
+        -113 -33 -125 l-6 -23 356 0 c196 0 356 -3 356 -6 0 -5 -137 -456 -166 -546
+        -9 -28 -22 -48 -30 -48 -8 0 -14 3 -14 6 0 3 36 123 81 267 44 144 82 270 85
+        280 5 16 -17 17 -355 17 -199 0 -361 3 -361 8 0 8 31 124 61 225 l20 67 779 0
+        c429 0 780 -3 780 -7 0 -5 -19 -71 -43 -148 l-43 -140 -200 -3 -199 -2 -134
+        -401 c-73 -220 -130 -403 -126 -407 4 -4 249 -9 544 -11 495 -3 541 -2 575 14
+        20 10 42 27 49 39 7 13 14 81 17 174 l5 152 248 -195 c137 -108 251 -195 253
+        -192 2 2 3 308 2 679 l-3 675 -250 -178 c-137 -98 -253 -178 -257 -178 -4 -1
+        -6 54 -5 122 2 100 -1 128 -16 154 -22 40 -64 63 -117 63 -22 0 -40 5 -40 10
+        0 6 3 10 8 10 4 0 28 18 54 40 l46 40 -30 56 c-17 31 -37 76 -44 101 -22 72
+        -13 77 122 70 l112 -5 22 66 c29 90 38 162 19 162 -24 0 -153 66 -173 89 -19
+        21 -19 22 10 52 16 17 56 49 89 72 33 22 62 42 64 43 7 6 -41 124 -69 168
+        l-28 44 -59 -20 c-32 -11 -81 -22 -109 -25 -84 -9 -87 16 -29 213 5 17 -1 26
+        -31 43 -41 25 -152 71 -168 71 -6 0 -22 -19 -35 -42 -33 -58 -100 -128 -122
+        -128 -22 0 -62 59 -95 140 -25 62 -25 62 -137 34 -113 -29 -108 -23 -101 -138
+        8 -129 -1 -147 -67 -127 -24 7 -70 26 -101 42 -32 16 -61 29 -66 29 -10 0
+        -107 -127 -122 -161 -11 -24 -8 -29 50 -85 66 -63 93 -103 81 -122 -10 -16
+        -87 -48 -153 -63 -68 -14 -73 -26 -59 -139 5 -41 8 -76 6 -78 -14 -14 -155 98
+        -155 123 0 22 56 62 129 92 l70 28 -6 40 c-5 36 -47 173 -55 180 -2 2 -43 -2
+        -93 -7 -158 -18 -175 6 -105 150 l39 82 -51 41 c-29 22 -73 51 -98 64 l-47 24
+        -38 -45 c-40 -49 -110 -104 -131 -104 -22 0 -47 47 -69 134 l-22 81 -49 2
+        c-27 1 -53 0 -59 -2z m171 -454 c59 -27 111 -77 142 -135 38 -73 38 -179 0
+        -252 -49 -93 -126 -144 -229 -152 -143 -10 -255 68 -295 206 -39 134 41 291
+        172 337 57 20 161 18 210 -4z m1400 -21 c103 -44 164 -139 164 -254 -1 -295
+        -377 -394 -527 -139 -20 34 -27 63 -31 119 -4 68 -2 80 27 139 56 113 160 172
+        281 158 25 -3 63 -13 86 -23z m-645 -450 c57 -16 64 -31 38 -82 -12 -24 -39
+        -65 -61 -92 -21 -27 -37 -53 -36 -56 5 -12 72 -83 116 -123 l43 -38 63 46 c73
+        51 127 77 143 67 19 -12 30 -53 38 -136 5 -52 4 -77 -2 -73 -6 4 -13 20 -16
+        37 l-6 30 -405 0 -404 0 -81 -35 c-45 -19 -81 -30 -81 -25 0 6 6 10 13 10 17
+        0 173 75 180 87 3 5 -4 35 -14 67 -11 33 -23 81 -26 107 -5 40 -3 48 15 58 22
+        12 102 1 173 -25 23 -7 46 -11 51 -8 12 8 88 163 88 181 0 16 117 18 171 3z
+        m-742 -367 c23 -27 41 -50 41 -53 0 -3 -45 -5 -100 -5 -55 0 -100 2 -100 5 0
+        10 42 75 62 97 26 28 41 21 97 -44z m1467 28 c21 -15 50 -40 63 -55 l24 -26
+        -95 0 c-88 0 -96 -2 -107 -22 -10 -21 -11 -20 -6 10 3 19 14 54 24 78 24 53
+        42 56 97 15z m-1777 -142 c41 -10 82 -19 93 -19 10 0 18 -5 18 -11 0 -20 -211
+        28 -218 50 -3 10 0 12 14 7 11 -4 52 -16 93 -27z"
+          />
+        </g>
+      </svg>
+    </div>
+    <div class="inline xl:hidden w-full">
+      <svg
+        class="h-16 w-16 p-2 border border-gray-500 hover:border-[#ee245d] rounded-xl float-right cursor-pointer stroke-gray-500 hover:stroke-[#ee245d]"
+        viewBox="0 0 30 30"
+        xmlns="http://www.w3.org/2000/svg"
+        (click)="toggleMenuLateral()"
+      >
+        <path
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-miterlimit="10"
+          d="M4 7h22M4 15h22M4 23h22"
+        />
+      </svg>
+    </div>
+  </nav>
+</div>
